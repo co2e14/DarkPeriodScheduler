@@ -1,0 +1,37 @@
+body {
+  background: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-8));
+}
+
+.gantt-bar {
+  position: absolute;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.15);
+  cursor: default;
+  transition: filter 120ms ease, transform 120ms ease;
+}
+
+.gantt-bar:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  z-index: 3;
+}
+
+.gantt-row:hover {
+  background: var(--mantine-color-default-hover);
+}
+
+.workload-table td,
+.workload-table th {
+  text-align: center;
+  padding: 4px 6px !important;
+  font-variant-numeric: tabular-nums;
+}

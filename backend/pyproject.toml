@@ -1,0 +1,24 @@
+[project]
+name = "dark-period-scheduler"
+version = "0.1.0"
+description = "Configurable scheduler for in-house crystal prep + external synchrotron data collection during a beam dark period"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "httpx>=0.27",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["ignore:Using `httpx` with `starlette.testclient` is deprecated"]
+
+[tool.uv]
+package = false

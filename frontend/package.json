@@ -1,0 +1,33 @@
+{
+  "name": "dark-period-scheduler-ui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mantine/core": "8.3.18",
+    "@mantine/dates": "8.3.18",
+    "@mantine/hooks": "8.3.18",
+    "@mantine/notifications": "8.3.18",
+    "@tabler/icons-react": "3.35.0",
+    "dayjs": "1.11.13",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.0",
+    "@types/react": "19.1.12",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "5.0.4",
+    "postcss": "8.5.6",
+    "postcss-preset-mantine": "1.18.0",
+    "postcss-simple-vars": "7.0.1",
+    "typescript": "5.9.3",
+    "vite": "7.1.12"
+  }
+}
